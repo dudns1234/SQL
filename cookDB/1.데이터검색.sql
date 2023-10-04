@@ -106,7 +106,7 @@ SELECT DISTINCT addr FROM userTBL; -- 중복제거
 SELECT emp_no, hire_date FROM employees
 ORDER BY hire_date ASC
 LIMIT 5;
--- ‘ LIMIT 시작, 개수’ 형식으로 조회
+-- 'LIMIT 시작, 개수' 형식으로 조회
 SELECT emp_no, hire_date FROM employees
 ORDER BY hire_date ASC
 LIMIT 0, 5;

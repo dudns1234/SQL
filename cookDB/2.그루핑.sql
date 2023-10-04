@@ -26,7 +26,7 @@ FROM userTBL
 WHERE height = (SELECT MAX(height) FROM userTBL)
 OR height = (SELECT MIN(height) FROM userTBL);
 -- 휴대폰이 있는 회원의 수(의도와 다르게 전체 회원이 조회됨)
-SELECT COUNT( * ) FROM userTBL;
+SELECT COUNT(*) FROM userTBL;
 -- 휴대폰이 있는 회원만 세려면 휴대폰 열이름(mobile1)을 지정해야 함
 SELECT COUNT(mobile1) AS '휴대폰이 있는 사용자' FROM userTBL;
 
